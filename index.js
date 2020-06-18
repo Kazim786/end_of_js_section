@@ -12,17 +12,10 @@ anArr.sort(function(a, b){return a-b}) //sorts the numbers in ascending order
 
 console.log(anArr)
 
-// const theArr = (arr) => {
-// const concatArr = []
-// for (let i=0; i < arr.length; i++){
-// for (item of arr) {
-// if (item === arr[i]{
-// arr[i].push(concatArr)
-// }}}
-// }
-
 const organize = (array) => {
-  array.forEach((i) => {
-    if (i === )
-  })
+    for(let i = 0; i < array.length; i++){
+            if (i === array[i]){
+
+            }
+    }
 }
