@@ -10,12 +10,12 @@ const anArr = [1,2,4,591,392,391,2,5,10,2,1,1,1,20,20];
 anArr.sort(function(a, b){return a-b}) //sorts the numbers in ascending order
 
 
-console.log(anArr)
+console.log(anArr[0 +1])
 
 const organize = (array) => {
     for(let i = 0; i < array.length; i++){
-            if (i === array[i]){
-
+            if (array[i] === array[i + i]){
+                
             }
     }
 }
