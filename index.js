@@ -1,0 +1,28 @@
+// 1.  Clean the room function: given an input of 
+//[1,2,4,591,392,391,2,5,10,2,1,1,1,20,20], make a function that organizes these into individual array that is ordered. For example answer(ArrayFromAbove) should return: [[1,1,1,1],[2,2,2], 4,5,10,[20,20], 391, 392,591]. Bonus: Make it so it organizes strings differently from number 
+//types. i.e. [1, "2", "3", 2] should return [[1,2], ["2", "3"]]
+
+
+
+
+
+const anArr = [1,2,4,591,392,391,2,5,10,2,1,1,1,20,20];
+anArr.sort(function(a, b){return a-b}) //sorts the numbers in ascending order
+
+
+console.log(anArr)
+
+// const theArr = (arr) => {
+// const concatArr = []
+// for (let i=0; i < arr.length; i++){
+// for (item of arr) {
+// if (item === arr[i]{
+// arr[i].push(concatArr)
+// }}}
+// }
+
+const organize = (array) => {
+  array.forEach((i) => {
+    if (i === )
+  })
+}
