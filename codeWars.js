@@ -31,11 +31,22 @@ function duplicateCount(str){
       
     }
   }
+
+//trying nested loops
+function duplicateCount(str) {
+    let result = {}
+    for(let i = 0; i < str.length; i++) {
+       const char = str[i]
+       if(char in result) {
+            result[char] +=1
+       } else {
+            result[char] = 1
+       }
+    }
+    return result
+  }
   
-  // duplicateCount('bbe'); //so far function tests code to see if it has a repeated number right after it.
-  duplicateCount('bba');
-  
-  
+  console.table(duplicateCount('blaaaab'));
   
   // duplicateCount("AbCdeeF")
   
