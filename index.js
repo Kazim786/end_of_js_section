@@ -14,8 +14,36 @@ console.log(anArr[0 +1])
 
 const organize = (array) => {
     for(let i = 0; i < array.length; i++){
-            if (array[i] === array[i + i]){
-                
+            // if (array[i] === array[i + i]){
+
+            // }
+            let result = {}
+            let char =  array[i] 
+            //if(char in array ){
+                // if(char === array[i + 1] && char === array[i + 2] && char === array[i + 3]){
+                //     // char = char.toString() + char.toString()
+                //     if(char === array[i + 2]){
+                //         char = char.toString() + char.toString()
+                //     } else {
+                //         result[char]
+                //     }
+                // }
+
+                // else{
+                //     result[char]
+                // }
+                //14 indices
+                switch (char === array[i]){
+                    case array[i + 1] === char:
+                        result[char.toString() + char.toString()]
+                        break;
+                    case array[i + 2] === char:
+                        result[char.toString() + char.toString()]
+                        break;
+                    case array[i + 3] === char:
+                        result[char.toString() + char.toString()]
+                        break;
+                    
+                }
             }
     }
-}
