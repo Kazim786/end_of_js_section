@@ -85,3 +85,5 @@ const maskify = (info) => {
 }
 //this pulls out the last 4 
 //did it by myself
+
+//Now have to find a way to exclude the last 4 from being masked by the ### 
