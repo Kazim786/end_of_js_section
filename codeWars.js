@@ -85,6 +85,9 @@ const maskify = (info) => {
 }
 //this pulls out the last 4 
 //did it by myself
+//Slice (last 4) = save to variable fourSaved
+// Slice (entire string) = replace with #### = save to var replaced  
+// Replace last 4 within var replaced with fourSaved -> (e.replace(e.substr(-4), "####"
 
 
 //Now have to find a way to exclude the last 4 from being masked by the ### 
@@ -98,13 +101,16 @@ const maskify = (info) => {
 //This replace method will be used in the way that i wrote it
 
 //console.log(e.substr([5 -4])) < might have to do something like this with substr
+//might also have to use slice method
 
+//Slice (last 4) = save to variable fourSaved
+// Slice (entire string) = replace with #### = save to var replaced  
+// Replace last 4 within var replaced with fourSaved
 
+// Followed notes and got this
 
-// let e = "hello world";
-// if(e.substr(-4)){
-//     console.log("dont do nothing")
-// }
-// else{
-//     e.replace(e.substr(), "####")
-// }
+const maskify = (info) => {
+    let fourSaved = info.slice((info.substr(-4))) //might have to put a negative number within the parameters so it starts from backwards
+    info.replace(info.slice(0), "######")
+    return info.replace(info.substr(-4), fourSaved);
+}
