@@ -24,7 +24,7 @@ strArr.splice(1, 1)
   //so far ive made the strings into arrays. both arrays are within a parent array
   let output = []
   for(let i = 0; i < strArr.length; i++){
-    if(strArr[0][i] in strArr[1][i]){
+    if(strArr[0][i] === strArr[1][i]){
       output.push(strArr[0][i]);
 
     }
