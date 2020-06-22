@@ -92,12 +92,19 @@ const maskify = (info) => {
 //would this work console.log(e.replace(e.substr(-4), ####)) (keep in mind i dont want 
 //to replace the last 4 with the ## as 
 //im doing in this code. This is simply done to see if this method works)
-//console.log(e.replace(e.substr(-4), "####")  <<<<< this works. You just have to put quotation marks around the string. This particular code replaces the last 4 with the ####. Our goal is to do the opposite. Everything but the last 4
+//console.log(e.replace(e.substr(-4), "####")  <<<<< this works. You just have to put quotation marks around the string. 
+//This particular code replaces the last 4 with the ####. 
+//Our goal is to do the opposite. Everything but the last 4
+//This replace method will be used in the way that i wrote it
 
-let e = "hello world";
-if(e.substr(-4)){
-    break
-}
-else{
-    e.replace(e.substr(), "####")
-}
+//console.log(e.substr([5 -4])) < might have to do something like this with substr
+
+
+
+// let e = "hello world";
+// if(e.substr(-4)){
+//     console.log("dont do nothing")
+// }
+// else{
+//     e.replace(e.substr(), "####")
+// }
