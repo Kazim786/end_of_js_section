@@ -79,6 +79,9 @@
 // which changes all but the last four characters into '#'.
 
 //everything but the last 4 need to be hidden
+//need to do something that singles out the last 4 of anything that is put into the argument.
 const maskify = (info) => {
-    info.substring()
+    console.log(info.substr(-4)) //might have to put a negative number within the parameters so it starts from backwards
 }
+//this pulls out the last 4 
+//did it by myself
