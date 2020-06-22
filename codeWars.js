@@ -86,4 +86,7 @@ const maskify = (info) => {
 //this pulls out the last 4 
 //did it by myself
 
+
 //Now have to find a way to exclude the last 4 from being masked by the ### 
+
+//would this work console.log(e.replace(e.substr(-4), ####)) (keep in mind i dont want to replace the last 4 with the ## as im doing in this code. This is simply done to see if this method works)
