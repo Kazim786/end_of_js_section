@@ -110,7 +110,9 @@ const maskify = (info) => {
 // Followed notes and got this
 
 const maskify = (info) => {
+    let hash = info.length;
     let fourSaved = info.slice((info.substr(-4))) //might have to put a negative number within the parameters so it starts from backwards
-    info.replace(info.slice(0), "######") //Might be a good idea to use length method to know how much ## you need
+    info.replace(info.slice(0), hash) //Might be a good idea to use length method to know how much ## you need
     return info.replace(info.substr(-4), fourSaved);
 }
+
