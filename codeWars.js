@@ -89,4 +89,7 @@ const maskify = (info) => {
 
 //Now have to find a way to exclude the last 4 from being masked by the ### 
 
-//would this work console.log(e.replace(e.substr(-4), ####)) (keep in mind i dont want to replace the last 4 with the ## as im doing in this code. This is simply done to see if this method works)
+//would this work console.log(e.replace(e.substr(-4), ####)) (keep in mind i dont want 
+//to replace the last 4 with the ## as 
+//im doing in this code. This is simply done to see if this method works)
+//console.log(e.replace(e.substr(-4), "####")  <<<<< this works. You just have to put quotation marks around the string
