@@ -6,44 +6,44 @@
 
 
 
-const anArr = [1,2,4,591,392,391,2,5,10,2,1,1,1,20,20];
-anArr.sort(function(a, b){return a-b}) //sorts the numbers in ascending order
+// const anArr = [1,2,4,591,392,391,2,5,10,2,1,1,1,20,20];
+// anArr.sort(function(a, b){return a-b}) //sorts the numbers in ascending order
 
 
-console.log(anArr[0 +1])
+// console.log(anArr[0 +1])
 
-const organize = (array) => {
-    for(let i = 0; i < array.length; i++){
-            // if (array[i] === array[i + i]){
+// const organize = (array) => {
+//     for(let i = 0; i < array.length; i++){
+//             // if (array[i] === array[i + i]){
 
-            // }
-            let result = {}
-            let char =  array[i] 
-            //if(char in array ){
-                // if(char === array[i + 1] && char === array[i + 2] && char === array[i + 3]){
-                //     // char = char.toString() + char.toString()
-                //     if(char === array[i + 2]){
-                //         char = char.toString() + char.toString()
-                //     } else {
-                //         result[char]
-                //     }
-                // }
+//             // }
+//             let result = {}
+//             let char =  array[i] 
+//             //if(char in array ){
+//                 // if(char === array[i + 1] && char === array[i + 2] && char === array[i + 3]){
+//                 //     // char = char.toString() + char.toString()
+//                 //     if(char === array[i + 2]){
+//                 //         char = char.toString() + char.toString()
+//                 //     } else {
+//                 //         result[char]
+//                 //     }
+//                 // }
 
-                // else{
-                //     result[char]
-                // }
-                //14 indices
-                switch (char === array[i]){
-                    case array[i + 1] === char:
-                        result[char.toString() + char.toString()]
-                        break;
-                    case array[i + 2] === char:
-                        result[char.toString() + char.toString()]
-                        break;
-                    case array[i + 3] === char:
-                        result[char.toString() + char.toString()]
-                        break;
+//                 // else{
+//                 //     result[char]
+//                 // }
+//                 //14 indices
+//                 switch (char === array[i]){
+//                     case array[i + 1] === char:
+//                         result[char.toString() + char.toString()]
+//                         break;
+//                     case array[i + 2] === char:
+//                         result[char.toString() + char.toString()]
+//                         break;
+//                     case array[i + 3] === char:
+//                         result[char.toString() + char.toString()]
+//                         break;
                     
-                }
-            }
-    }
+//                 }
+//             }
+//     }
