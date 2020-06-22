@@ -115,4 +115,4 @@ const maskify = (info) => {
     info.replace(info.slice(0), hash) //Might be a good idea to use length method to know how much ## you need
     return info.replace(info.substr(-4), fourSaved);
 }
-
+//make an array maybe for the hash and then push the hash into the array then set it = to info.length
