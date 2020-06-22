@@ -66,6 +66,7 @@
   
   // console.log( charRepeats(example) ); // 'false', because when it hits 'l', the indexOf and lastIndexOf are not the same.
 
+  //************************************************ */
 //Exercise 3
 
 // Usually when you buy something, 
@@ -76,3 +77,8 @@
 
 // Your task is to write a function maskify, 
 // which changes all but the last four characters into '#'.
+
+//everything but the last 4 need to be hidden
+const maskify = (info) => {
+    info.substring()
+}
