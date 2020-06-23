@@ -133,3 +133,26 @@ const maskify = (info) => {
   }
   }
   console.log(maskify("hello world"))
+//***************************************** */
+
+  ///LATEST CODE TURNED STRING TO AN ARRAY:
+
+  // const maskify = (info) => {
+//   // let hash = '#' * info.length; //need to find a way to have as many # as there are characters in the string.
+//   let fourSaved = info.slice((info.substr(-4))) //might have to put a negative number within the parameters so it starts from backwards
+//   // info.replace(info.slice(0), hash) //Might be a good idea to use length method to know how much ## you need
+// const infoArr = info.split(", ")
+
+
+//   for(let i = 0; i < infoArr; i++){
+//       infoArr[i] = "#"
+//      console.log(infoArr.join(''));
+  
+//   // infoArr.replace(infoArr.substr(-4), fourSaved);}
+//   // return infoArr
+//   }
+//   let arrStr = infoArr.join('');
+//   let masked = arrStr.replace(arrStr.substr(-4), fourSaved);
+//   return masked
+// }
+// console.log(maskify("hello world"))
