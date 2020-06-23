@@ -112,7 +112,7 @@ const maskify = (info) => {
 const maskify = (info) => {
     // let hash = '#' * info.length; //need to find a way to have as many # as there are characters in the string.
     let fourSaved = info.slice((info.substr(-4))) //might have to put a negative number within the parameters so it starts from backwards
-    info.replace(info.slice(0), hash) //Might be a good idea to use length method to know how much ## you need
+    // info.replace(info.slice(0), hash) //Might be a good idea to use length method to know how much ## you need
     for(let i = 0; i < info.length; i++){
         info.replace(str[i], "#")
     }
