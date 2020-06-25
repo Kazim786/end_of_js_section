@@ -6,4 +6,6 @@
 
 const questionMark = (str) => {
     
+
+    return console.log(str.includes('?'))
 }
