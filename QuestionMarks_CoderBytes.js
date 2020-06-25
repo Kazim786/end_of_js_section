@@ -6,11 +6,15 @@
 
 const questionMark = (str) => {
     if(str.includes("?") === true){ //Checks to see if the string has question mark
-        console.log(str)
-        return console.log(`${str} has ?`)
+        const arr = str.split(", ");
+        for(let i = 0; i < arr.length; i++){
+            if(arr[i] == [0-9] && arr[i] + arr[i + 1] == 10){
+                return console.log("Number that plus the other number == 10")
+            }
+        }
     } else{
         console.log("no uestion mark")
     }
 
-    
 }
+console.log(questionMark("1a9d?fg55"))
