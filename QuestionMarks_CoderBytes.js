@@ -5,7 +5,12 @@
 // For example: if str is "arrb6???4xxbl5???eee5" then your program should return true because there are exactly 3 question marks between 6 and 4, and 3 question marks between 5 and 5 at the end of the string.
 
 const questionMark = (str) => {
-    
+    if(str.includes("?") === true){ //Checks to see if the string has question mark
+        console.log(str)
+        return console.log(`${str} has ?`)
+    } else{
+        console.log("no uestion mark")
+    }
 
-    return console.log(str.includes('?'))
+    
 }
