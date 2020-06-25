@@ -11,15 +11,19 @@ const maskify = (info) => {
     const infoArr = info.split(", ") //turned string into an array for easier manipulation
   
     for(let i = 0; i < infoArr.length; i++){
-      infoArr[i] = infoArr[i].replace(/[a-zA-Z]/g, "#") //so each and every element in the array is changed into a #
-      //This regular expression will include all letters and numbers
-      infoArr[i] = infoArr[i].replace(/[0-9]/g, "#") //This will do the numbers
+    
+      infoArr[i] = infoArr[i].replace(/[a-zA-Z0-9]/g, "#") //so each and every element in the array is changed into a #
+      // infoArr[i] = infoArr[i].replace(/[0-9]/g, "#")
     }
     let arrStr = infoArr.join(''); //Changing array back to string
     let masked = arrStr.slice(0, -4) + fourSaved; // putting the last 4 characters of the string back into it.
     return masked 
   }
   console.log(maskify("hello world")) //desired output should be: ##### #orld
+  console.log(maskify("Kazim"))
+  console.log(maskify("345567889"))
+  console.log(maskify("34594532"))
+  console.log(maskify("as3dfsdf45f"))
 
   //***********  Previous Attempts below *********
 
