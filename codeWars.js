@@ -11,8 +11,9 @@ const maskify = (info) => {
     const infoArr = info.split(", ") //turned string into an array for easier manipulation
   
     for(let i = 0; i < infoArr.length; i++){
-      infoArr[i] = infoArr[i].replace(/[a-zA-Z]/g && /^[0-9]+$/, "#") //so each and every element in the array is changed into a #
+      infoArr[i] = infoArr[i].replace(/[a-zA-Z]/g, "#") //so each and every element in the array is changed into a #
       //This regular expression will include all letters and numbers
+      infoArr[i] = infoArr[i].replace(/[0-9]/g, "#") //This will do the numbers
     }
     let arrStr = infoArr.join(''); //Changing array back to string
     let masked = arrStr.slice(0, -4) + fourSaved; // putting the last 4 characters of the string back into it.
