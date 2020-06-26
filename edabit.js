@@ -15,13 +15,15 @@
 function existsHigher(arr, n) {
 	if(arr !== []){
 		for(let i = 0; i < arr.length; i++){
-			if(n < arr[i] || n == arr[i]){
-				return true
-	}
-            else if(n > arr[i]){
+			if(n < arr[i] || n === arr[i]){
+                return true
+            }
+            else if(n > arr[i] && arr === []){
         return false
     
 }
 		}
 	}
 }
+
+//i isnt incrementing and the empty array is not returning false
