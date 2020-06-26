@@ -5,3 +5,11 @@
 
 //Example: The binary representation of 1234 is
 // 10011010010, so the function should return 5 in this case
+
+const countBits = (n) => {
+
+    function addBinary( a, b ){ var sum = a + b, binary = ''; 
+    while ( sum > 0 ) { binary = ( sum % 2 ) + binary; sum = Math.floor( sum / 2 ); } return binary; }
+
+
+}
