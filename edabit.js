@@ -17,9 +17,11 @@ function existsHigher(arr, n) {
 		for(let i = 0; i < arr.length; i++){
 			if(n < arr[i] || n == arr[i]){
 				return true
-	} else if(arr == []) {
-		return false
-			}
+	}
+            else if(n > arr[i]){
+        return false
+    
+}
 		}
 	}
 }
