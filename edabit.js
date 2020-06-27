@@ -116,7 +116,7 @@ function monthName(num) {
             num === 12;
             month = "December";
             break;
-        default: console.log("Num has to be between 1 or 12")
+        default: alert("Num has to be between 1 or 12")
         
         }
         return month
