@@ -47,3 +47,11 @@ function countTrue(arr) {
 	return count.length
 	 
 }
+//********** */
+//Exercise 3 - how many words are there in a string:
+
+function countWords(str) {
+    const arrStr = str.split(" ")
+    
+      return (arrStr.length)
+  }
