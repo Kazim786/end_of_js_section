@@ -27,3 +27,5 @@ function existsHigher(arr, n) {
 }
 
 //i isnt incrementing and the empty array is not returning false
+
+//checked again and i seems to be working now. The else if is returning undefined
