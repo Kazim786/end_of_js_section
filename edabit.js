@@ -153,3 +153,46 @@ function countTrue(arr) {
 //     }
 // return additive;
 // }
+
+//********************** */
+//Exercise 6
+
+
+// Create a function that counts how many
+// characters make up a rectangular shape. 
+//You will be given a array of strings.
+
+// Examples
+// countCharacters([
+//   "###",
+//   "###",
+//   "###"
+// ]) ➞ 9
+
+// countCharacters([
+//   "22222222",
+//   "22222222",
+// ]) ➞ 16
+
+// countCharacters([
+//   "------------------"
+// ]) ➞ 18
+
+// countCharacters([]) ➞ 0
+
+// countCharacters([ "", ""]) ➞ 0
+// Notes
+// Return 0 if given an empty array.
+
+//My notes before building:
+
+// arr.length === 0 for the conditional that evaluates empty array
+
+const countCharacters = (array) => {
+    if(array.length === 0){
+        return 0
+    }
+    else{
+        return array.length;
+    }
+}
