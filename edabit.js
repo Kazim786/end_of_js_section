@@ -65,62 +65,91 @@ function countTrue(arr) {
 // your function should return "March", 
 // because March is the 3rd month.
 
-function monthName(num) {
-    let month;
-  switch(num) {
-        case 1:
-            num === 1;
-            month = "January";
-            break;
-        case 2: 
-            num === 2;
-            month = "February";
-            break;
-        case 3: 
-            num === 3;
-            month = "March";
-            break;
-        case 4:
-            num === 4;
-            month = "April";
-            break;
-        case 5:
-            num === 5;
-            month = "May";
-            break;
-        case 6:
-            num === 6;
-            month = "June";
-            break;
-        case 7:
-            num === 7;
-            month = "July";
-            break;
-        case 8:
-            num == 8;
-            month = "August";
-            break;
-        case 9:
-            num === 9;
-            month = "September";
-            break;
-        case 10:
-            num === 10;
-            month = "October";
-            break;
-        case 11:
-            num === 11;
-            month = "November";
-            break;
-        case 12: 
-            num === 12;
-            month = "December";
-            break;
-        default: alert("Num has to be between 1 or 12")
+// function monthName(num) {
+//     let month;
+//   switch(num) {
+//         case 1:
+//             num === 1;
+//             month = "January";
+//             break;
+//         case 2: 
+//             num === 2;
+//             month = "February";
+//             break;
+//         case 3: 
+//             num === 3;
+//             month = "March";
+//             break;
+//         case 4:
+//             num === 4;
+//             month = "April";
+//             break;
+//         case 5:
+//             num === 5;
+//             month = "May";
+//             break;
+//         case 6:
+//             num === 6;
+//             month = "June";
+//             break;
+//         case 7:
+//             num === 7;
+//             month = "July";
+//             break;
+//         case 8:
+//             num == 8;
+//             month = "August";
+//             break;
+//         case 9:
+//             num === 9;
+//             month = "September";
+//             break;
+//         case 10:
+//             num === 10;
+//             month = "October";
+//             break;
+//         case 11:
+//             num === 11;
+//             month = "November";
+//             break;
+//         case 12: 
+//             num === 12;
+//             month = "December";
+//             break;
+//         default: alert("Num has to be between 1 or 12")
         
-        }
-        return month
-  }
+//         }
+//         return month
+//   }
   
-  console.log(monthName(8));
+//   console.log(monthName(8));
 
+//******************************* */
+//Exercise 5
+
+// A number added with its additive inverse equals zero. 
+//Create a function that returns an array of additive inverses.
+
+// Examples
+// additiveInverse([5, -7, 8, 3]) ➞ [-5, 7, -8, -3]
+
+// additiveInverse([1, 1, 1, 1, 1]) ➞ [-1, -1, -1, -1, -1]
+
+// additiveInverse([-5, -25, 35]) ➞ [5, 25, -35]
+// Notes
+// Don't forget to return the result.
+// If you get stuck on a challenge, find help in the Resources tab.
+// If you're really stuck, unlock solutions in the Solutions tab.
+
+const additiveInverse = (arr) => {
+    const additive = [];
+    for(let i = 0; i < arr.length; i++){
+        if(Math.sign(arr[i]) === 1 ){
+            additive.push(-arr[i])
+        }
+        else if(Math.sign(arr[i]) === -1){
+            additive.push(-arr[i])
+        }
+    }
+
+}
