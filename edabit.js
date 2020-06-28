@@ -209,3 +209,13 @@ const countCharacters = (array) => {
 //   let e2 = theTwos[1].slice();
   
 //   console.log(e1.length + e2.length) or console.log(theTwos[0].slice().length + theTwos[1].slice().length)
+
+
+//for(let i = 0; i < array.length; i++){
+//if(array.length === 1 ){
+    //return array[0].splice().length
+//}
+// else if(array.length > 1){
+// return array[i].splice().length //Gotta figure out how to add all the elements 
+//}
+    //}
