@@ -151,5 +151,5 @@ const additiveInverse = (arr) => {
             additive.push(-arr[i])
         }
     }
-
+return additive;
 }
