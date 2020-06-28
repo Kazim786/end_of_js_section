@@ -208,4 +208,4 @@ const countCharacters = (array) => {
 //   let e1 = theTwos[0].slice() 
 //   let e2 = theTwos[1].slice();
   
-//   console.log(e1.length + e2.length)
+//   console.log(e1.length + e2.length) or console.log(theTwos[0].slice().length + theTwos[1].slice().length)
