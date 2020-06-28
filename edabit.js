@@ -141,15 +141,15 @@ function countTrue(arr) {
 // If you get stuck on a challenge, find help in the Resources tab.
 // If you're really stuck, unlock solutions in the Solutions tab.
 
-const additiveInverse = (arr) => {
-    const additive = [];
-    for(let i = 0; i < arr.length; i++){
-        if(Math.sign(arr[i]) === 1 ){
-            additive.push(-arr[i])
-        }
-        else if(Math.sign(arr[i]) === -1){
-            additive.push(-arr[i])
-        }
-    }
-return additive;
-}
+// const additiveInverse = (arr) => {
+//     const additive = [];
+//     for(let i = 0; i < arr.length; i++){
+//         if(Math.sign(arr[i]) === 1 ){
+//             additive.push(-arr[i])
+//         }
+//         else if(Math.sign(arr[i]) === -1){
+//             additive.push(-arr[i])
+//         }
+//     }
+// return additive;
+// }
