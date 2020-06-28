@@ -193,6 +193,19 @@ const countCharacters = (array) => {
         return 0
     }
     else{
-        return array.length;
+        return array[i].slice()
     }
 }
+
+
+//Brainstorming
+//const theTwos = [
+//     '22222222',
+//     '22222222',
+//     ]
+  
+  
+//   let e1 = theTwos[0].slice() 
+//   let e2 = theTwos[1].slice();
+  
+//   console.log(e1.length + e2.length)
