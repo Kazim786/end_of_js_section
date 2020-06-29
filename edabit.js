@@ -237,6 +237,20 @@ function countTrue(arr) {
     // array[i] -= 1
 //}
 
+const transform = (array) => {
+    for(let i = 0; i < array.length; i++){
+        if(array[i] % 2 === 0){
+            return array[i] += 1
+        }
+        else if(array[i] % 2 === 1 ){
+           return  array[i] -= 1
+        }
+      }
+      return console.log(array)
+  }
+
+
+
 
 
 
