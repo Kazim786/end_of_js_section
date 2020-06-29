@@ -209,36 +209,8 @@ const countCharacters = (array) => {
     }
   }
   console.log(countCharacters(theTwos))
+//It worked!!! WOOHOO DID IT ALL BY MYSELF WITH 0 HELP
 
 
-//for(let i = 0; i < array.length; i++){
-//if(array.length === 1 ){
-    //return array[0].slice().length
-//}
-// else if(array.length > 1){
-// return array[i].slice().length + array[i].splice().length //Gotta figure out how to add all the elements 
-//}
-    //}
 
 
-//Brainstorming
-//const theTwos = [
-//     '22222222',
-//     '22222222',
-//     ]
-  
-  
-//   let e1 = theTwos[0].slice() 
-//   let e2 = theTwos[1].slice();
-  
-//   console.log(e1.length + e2.length) or console.log(theTwos[0].slice().length + theTwos[1].slice().length)
-
-
-//for(let i = 0; i < array.length; i++){
-//if(array.length === 1 ){
-    //return array[0].splice().length
-//}
-// else if(array.length > 1){
-// return array[i].splice().length + array[i].splice().length //Gotta figure out how to add all the elements 
-//}
-    //}
