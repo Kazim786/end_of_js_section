@@ -189,26 +189,26 @@ function countTrue(arr) {
 // arr.length === 0 for the conditional that evaluates empty array
 
 
-const theTwos = [
-    '22222222',
-    '22222222',
-    ]
-const countCharacters = (array) => {
-    if(array.length === 0){
-        return 0
-    }
-    else{
-        for(let i = 0; i < array.length; i++){
-            if(array.length === 1 ){
-            return array[0].slice().length
-            }
-            else if(array.length > 1){
-            return array[i].slice().length * array.length //Gotta figure out how to add all the elements 
-                }
-        }
-    }
-  }
-  console.log(countCharacters(theTwos))
+// const theTwos = [
+//     '22222222',
+//     '22222222',
+//     ]
+// const countCharacters = (array) => {
+//     if(array.length === 0){
+//         return 0
+//     }
+//     else{
+//         for(let i = 0; i < array.length; i++){
+//             if(array.length === 1 ){
+//             return array[0].slice().length
+//             }
+//             else if(array.length > 1){
+//             return array[i].slice().length * array.length //Gotta figure out how to add all the elements 
+//                 }
+//         }
+//     }
+//   }
+//   console.log(countCharacters(theTwos))
 //It worked!!! WOOHOO DID IT ALL BY MYSELF WITH 0 HELP
 
 
