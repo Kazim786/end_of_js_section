@@ -249,7 +249,7 @@ function countTrue(arr) {
 //            array[i] += 1
 //         }
 //       }
-//       return console.log(array)
+//       return array
 //   }
 
 
