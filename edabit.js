@@ -229,6 +229,13 @@ function countTrue(arr) {
 
 // Notes --> Will use modular
 
+//for loop
+//if(array[i] % 2 === 0){
+    //return array[i] += 1
+//}
+//else if( array[i] % 2 !== 0 || array[i] % 2 === 1 ){
+    // array[i] -= 1
+//}
 
 
 
