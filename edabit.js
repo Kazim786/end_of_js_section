@@ -240,10 +240,10 @@ function countTrue(arr) {
 const transform = (array) => {
     for(let i = 0; i < array.length; i++){
         if(array[i] % 2 === 0){
-            return array[i] += 1
+            array[i] -= 1
         }
         else if(array[i] % 2 === 1 ){
-           return  array[i] -= 1
+           array[i] += 1
         }
       }
       return console.log(array)
