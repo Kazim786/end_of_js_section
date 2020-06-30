@@ -287,7 +287,7 @@ function countTrue(arr) {
 
 //Code:
 const missingAngle = (a, b) => {
-    let missing = a + b - 180 
+    let missing = (a + b) - 180 
     if (missing === 90){
    return console.log( "Right angle")
   } else if (missing < 90){
