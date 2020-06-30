@@ -287,17 +287,17 @@ function countTrue(arr) {
 
 //Code:
 const missingAngle = (a, b) => {
-    a + b - 180 === c
-    if (c === 90){
+    let missingAngle = a + b - 180 
+    if (missingAngle === 90){
     return console.log( "Right angle")
-} else if(c < 90){
+  } else if (missingAngle < 90){
     return console.log("Acute angle")
-} else if (c > 90){
+  } else if (missingAngle > 90){
     return console.log("Obtuse angle")
-}
-else {
+  }
+  else {
     return console.log("Sum of angles go up to 180.")
-} }
+  } }
 
 
 
