@@ -287,7 +287,7 @@ function countTrue(arr) {
 
 //Code:
 const missingAngle = (a, b) => {
-    let missing = (a + b) - 180 
+    let missing = 180 - (a + b) 
       let right = "Right Angle"
       let obtuse = "Obtuse"
       let acute = "Acute Angle"
