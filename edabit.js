@@ -325,7 +325,7 @@ function countTrue(arr) {
 
 //My notes: Use RegEx (wrote this before noticing the note above^^^ lol)
 
-let x = /\d/g
+// let x = /\d/g
 
 /* Fill in the regular expression */
 
