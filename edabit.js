@@ -306,6 +306,30 @@ function countTrue(arr) {
 //   console.log(missingAngle(45, 45)) //Right
 //   console.log(missingAngle(100, 2)) //Acute
 
+//*************** */
+//Exercise 8
+
+// Write a regular expression that matches 
+//a string if it contains at least one digit.
+
+// Examples
+// "c8" ➞ true
+
+// "23cc4" ➞ true
+
+// "abwekz" ➞ false
+
+// "sdfkxi" ➞ false
+// Notes
+// This challenge is designed to use RegEx only.
+
+//My notes: Use RegEx (wrote this before noticing the note above^^^ lol)
+
+let x = /\d/g
+
+/* Fill in the regular expression */
+
+
 
 
 
