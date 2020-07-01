@@ -302,8 +302,9 @@ const missingAngle = (a, b) => {
     return console.log("Sum of angles go up to 180.")
   } }
   
-  console.log(missingAngle(5, 7))
-  console.log(missingAngle(45, 45))
+  console.log(missingAngle(5, 7)) //Obtuse
+  console.log(missingAngle(45, 45)) //Right
+  console.log(missingAngle(100, 2)) //Acute
 
 
 
