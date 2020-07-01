@@ -286,25 +286,25 @@ function countTrue(arr) {
 //}
 
 //Code:
-const missingAngle = (a, b) => {
-    let missing = 180 - (a + b) 
-      let right = "Right Angle"
-      let obtuse = "Obtuse"
-      let acute = "Acute Angle"
-    if (missing === 90){
-   return right 
-  } else if (missing < 90){
-     return  acute
-  } else if (missing > 90){
-     return obtuse
-  }
-  else {
-    return console.log("Sum of angles go up to 180.")
-  } }
+// const missingAngle = (a, b) => {
+//     let missing = 180 - (a + b) 
+//       let right = "Right Angle"
+//       let obtuse = "Obtuse"
+//       let acute = "Acute Angle"
+//     if (missing === 90){
+//    return right 
+//   } else if (missing < 90){
+//      return  acute
+//   } else if (missing > 90){
+//      return obtuse
+//   }
+//   else {
+//     return console.log("Sum of angles go up to 180.")
+//   } }
   
-  console.log(missingAngle(5, 7)) //Obtuse
-  console.log(missingAngle(45, 45)) //Right
-  console.log(missingAngle(100, 2)) //Acute
+//   console.log(missingAngle(5, 7)) //Obtuse
+//   console.log(missingAngle(45, 45)) //Right
+//   console.log(missingAngle(100, 2)) //Acute
 
 
 
