@@ -344,23 +344,28 @@ function countTrue(arr) {
 // // Smallest number is 19, biggest is 86.
 // My Notes
 // Use min and max functions
-const num = [1, 2, -9]
+// const num = [1, 2, -9]
 
-// This will return output of the largest and smallest number in the array
+// This will return output of the largest and smallest number in the array:
 // const diffMaxMin = (arr) => {
 //     let max = Math.max.apply(Math, arr)
 //     let min = Math.min.apply(Math, arr)
 //     return [max, min]
 //   }
   //when using Math.max & Math.min on array you have to include .apply at the end
+//******** */
+//To find the sum between the largest and smallest. Here is the function to do that:
 
-//To find the sum between the largest and smallest. Here is the function to do that
+// const diffMaxMin = (arr) => {
+//     let max = Math.max.apply(Math, arr)
+//     let min = Math.min.apply(Math, arr)
+//     return max - min
+//   }
 
-const diffMaxMin = (arr) => {
-    let max = Math.max.apply(Math, arr)
-    let min = Math.min.apply(Math, arr)
-    return max - min
-  }
+// ******************
+
+//Exercise 9:
+
 
 
 
