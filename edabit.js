@@ -354,7 +354,13 @@ const num = [1, 2, -9]
 //   }
   //when using Math.max & Math.min on array you have to include .apply at the end
 
+//To find the sum between the largest and smallest. Here is the function to do that
 
+const diffMaxMin = (arr) => {
+    let max = Math.max.apply(Math, arr)
+    let min = Math.min.apply(Math, arr)
+    return max - min
+  }
 
 
 
