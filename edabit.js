@@ -346,19 +346,32 @@ function countTrue(arr) {
 // Use min and max functions
 const num = [1, 2, -9]
 
+
 const diffMaxMin = (arr) => {
-    for(let i = 0; i < arr.length; i++){
-    let min = arr.reduce((accumulator, i) => {
-        console.log(accumulator)
-        return Math.min(i) 
-    }, 0)
-      let max = arr.reduce((accumulator, i) => {
-        console.log(accumulator);
-        return Math.max(i)
-      }, 0)
-      return [min, max]
-  }}
-console.log(diffMaxMin(num))
+    let max = Math.max.apply(Math, arr)
+    let min = Math.min.apply(Math, arr)
+    return [max, min]
+  }
+
+
+
+
+
+
+
+// const diffMaxMin = (arr) => {
+//     for(let i = 0; i < arr.length; i++){
+//     let min = arr.reduce((accumulator, i) => {
+//         console.log(accumulator)
+//         return Math.min(i) 
+//     }, 0)
+//       let max = arr.reduce((accumulator, i) => {
+//         console.log(accumulator);
+//         return Math.max(i)
+//       }, 0)
+//       return [min, max]
+//   }}
+// console.log(diffMaxMin(num))
 
 
 
