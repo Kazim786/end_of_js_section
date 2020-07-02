@@ -364,7 +364,7 @@ function countTrue(arr) {
 
 // ******************
 
-//Exercise 9:
+//Exercise 10:
 
 
 
