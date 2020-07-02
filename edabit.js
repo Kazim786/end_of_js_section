@@ -352,6 +352,7 @@ const diffMaxMin = (arr) => {
     let min = Math.min.apply(Math, arr)
     return [max, min]
   }
+  //when using Math.max & Math.min on array you have to include .apply at the end
 
 
 
