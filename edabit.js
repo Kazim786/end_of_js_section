@@ -386,7 +386,7 @@ function countTrue(arr) {
 //put the parts of the string that come before and follow the - into arrays.
 //push those arrays into a new parent array
 //Return the length of that array and that will be your syllable count
-
+//could probbly use regex too
 
 const numberSyllables = (str) => {
 
