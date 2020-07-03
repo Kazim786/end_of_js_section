@@ -405,7 +405,7 @@ const numberSyllables = (str) => {
     //str.slice(i - 1)
 //}
 
-console.log(numberSyllables(ex))
+// console.log(numberSyllables(ex))
 
 //work on codesandbox:
 
@@ -416,21 +416,25 @@ console.log(numberSyllables(ex))
 //   let dashPos = [];
 //   let parent = []
   
-//   for(let i = 0; i < str.length; i++){
-//     if(str[i] === '-'){
-//       dashPos.push(i);
-//       console.log(dashPos.join()) //figure out how to use this
-//       //maybe any element that has an index less than the numbers in the array are split into an array. Then these arrays are pushed into a parent array and then you return the length
-//      for(let i = 0; i < dashPos.length; i++){
-//        parent.push(str[i].substring(str[i], dashPos[i]))
-//        console.log(parent)
-      
-//      }
-//     }
-    
-//   } 
-// }
 
+// const numberSyllables = (str) => {
+//     let dashPos = [];
+//     let parent = []
+//    for(let i = 0; i < str.length; i++){
+//     if(str[i] === '-'){
+//         dashPos.push(i);
+//         console.log(dashPos.join()) //figure out how to use this
+//         //maybe any element that has an index less than the numbers in the array are split into an array. Then these arrays are pushed into a parent array and then you return the length
+//        for(let i = 0; i < dashPos.length; i++){
+//          parent.push(str.substring(str[i], dashPos[i]))
+//          console.log(parent)
+        
+//        }
+//       }
+      
+//     } 
+//     return parent
+//   }
 // //const parent = [];
 // // parent.push(str.slice(i, '-').split(','))
 // // parent.push(str.slice('-', '-').split(','))
