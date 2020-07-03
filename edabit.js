@@ -382,7 +382,7 @@ function countTrue(arr) {
 // If you're really stuck, unlock solutions in the Solutions tab.
 
 //My Notes:
-//Use string methods that look up the - 
+//Use string methods that look up the '-' 
 //put the parts of the string that come before and follow the - into arrays.
 //push those arrays into a new parent array
 //Return the length of that array and that will be your syllable count
@@ -398,11 +398,51 @@ const numberSyllables = (str) => {
       dashPos.push(i);
       console.log(dashPos.join()) //extracts the position
     }
-    
+    // if(str.indexOf(str[i]) < )
   }
 }
+//if (str[i] === '-'){
+    //str.slice(i - 1)
+//}
 
 console.log(numberSyllables(ex))
+
+//work on codesandbox:
+
+// let ex = "beau-tif-ul"
+// console.log(ex[1])
+// console.log(ex.lastIndexOf('-'))
+// const numberSyllables = (str) => {
+//   let dashPos = [];
+//   let parent = []
+  
+//   for(let i = 0; i < str.length; i++){
+//     if(str[i] === '-'){
+//       dashPos.push(i);
+//       console.log(dashPos.join()) //figure out how to use this
+//       //maybe any element that has an index less than the numbers in the array are split into an array. Then these arrays are pushed into a parent array and then you return the length
+//      for(let i = 0; i < dashPos.length; i++){
+//        parent.push(str[i].substring(str[i], dashPos[i]))
+//        console.log(parent)
+      
+//      }
+//     }
+    
+//   } 
+// }
+
+// //const parent = [];
+// // parent.push(str.slice(i, '-').split(','))
+// // parent.push(str.slice('-', '-').split(','))
+// // parent.push(str.slice('-', 11).split(','))
+// //parent.push(str.slice(i, str.indexOf('-')).split(','))
+// console.log(numberSyllables(ex))
+// console.log(ex.substring(0, 4))
+
+// // console.log(ex.slice(0, ex.indexOf( '-'))) //&& ex.lastIndexOf('-')
+
+
+
 
 
 
