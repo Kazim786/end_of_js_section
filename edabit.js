@@ -388,7 +388,9 @@ function countTrue(arr) {
 //Return the length of that array and that will be your syllable count
 
 
+const numberSyllables = (str) => {
 
+}
 
 
 
