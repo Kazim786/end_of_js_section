@@ -388,18 +388,21 @@ function countTrue(arr) {
 //Return the length of that array and that will be your syllable count
 //could probbly use regex too
 
-let ex = "i - am hungry - and"
+let ex = "beau-tif-ul"
+console.log(ex[1])
 console.log(ex.lastIndexOf('-'))
 const numberSyllables = (str) => {
   let dashPos = [];
   for(let i = 0; i < str.length; i++){
     if(str[i] === '-'){
       dashPos.push(i);
-
+      console.log(dashPos.join()) //extracts the position
     }
     
   }
 }
+
+console.log(numberSyllables(ex))
 
 
 
