@@ -383,6 +383,9 @@ function countTrue(arr) {
 
 //My Notes:
 //Use string methods that look up the - 
+//put the parts of the string that come before and follow the - into arrays.
+//push those arrays into a new parent array
+//Return the length of that array and that will be your syllable count
 
 
 
