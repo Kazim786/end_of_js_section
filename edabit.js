@@ -496,13 +496,75 @@ const numberSyllables = (str) => str.split('-').length;
 // All arrays will have at least one element.
 // Don't forget to return the result.
 
-const multiplyByLength = (arr) => {
-    for(let i = 0; i < arr.length; i++){
-        arr[i] = arr[i] * arr.length
-    }
-    return arr
-}
+// const multiplyByLength = (arr) => {
+//     for(let i = 0; i < arr.length; i++){
+//         arr[i] = arr[i] * arr.length
+//     }
+//     return arr
+// }
 
+//****************** */
+
+//Exercise 13 - Truthy or Falsy?
+
+// A value is said to be "truthy" if it evaluates to true in a Boolean context. All values are truthy in JavaScript unless they're one of the following:
+
+// false
+// null
+// undefined
+// 0
+// NaN
+// ""
+// In JavaScript, an empty object and an empty array are both considered "truthy," but an empty string is considered false when evaluated as a Boolean (this behavior is what we call "falsey").
+
+// Create a function that takes an argument of any data type and returns 1 if it's truthy and 0 if it's falsy.
+
+// Examples
+// isTruthy(0) ➞ 0
+
+// isTruthy(false) ➞ 0
+
+// isTruthy("") ➞ 0
+
+// isTruthy("false") ➞ 1
+// Notes
+// You may have to take into account NaN's unique behavior in JavaScript. While other falsey values are equal to themselves, NaN != NaN
+// If you get stuck on a challenge, find help in the Resources tab.
+// If you're really stuck, unlock solutions in the Solutions tab.
+
+
+const isTruthy = (input) => {
+    if(input === ""){
+        return 0
+    } else if (input === false){
+        return 0
+    }else if(input === null){
+        return 0
+    }else if(input === undefined){
+        return 0
+    } else if(input === 0){
+        return 0
+    } else if(isNaN(input)){
+        return 0
+    } else if(input !== ""){
+        return 1
+    } else if(input === true){
+        return 1
+    }else if(input === "false"){
+        return 1
+    } else if(input === {}){
+        return 1
+    }
+    else if(input === []){
+        return 1
+    } else if (input === function(){}){
+        return 1
+    }
+    else{
+        return 1
+    }
+
+}
 
 
 
