@@ -472,6 +472,10 @@ const numberSyllables = (str) => {
 //     return parent.length
 //   }
 
+//CORRECT CODE!!!!!!!!!
+
+
+const numberSyllables = (str) => str.split('-').length;
 
 
 
