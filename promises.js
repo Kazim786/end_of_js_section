@@ -239,8 +239,7 @@ testNum(14).then(result => console.log(result)).catch(error => console.log(error
   resolve(capitalized)
 
 })
-  
-  }
+}
   makeAllCaps(letters)
   .then(result => console.log(result))
   .catch(error => console.log(error))
