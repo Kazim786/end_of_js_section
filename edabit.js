@@ -534,6 +534,9 @@ const numberSyllables = (str) => str.split('-').length;
 
 
 const isTruthy = (input) => {
+
+   
+
     if(input === ""){
         return 0
     } else if (input === false){
@@ -550,7 +553,7 @@ const isTruthy = (input) => {
         return 1
     } else if(input === true){
         return 1
-    }else if(input === "false"){
+    }else if(input === 'false'){
         return 1
     } else if(input === {}){
         return 1
