@@ -215,6 +215,46 @@ testNum(14).then(result => console.log(result)).catch(error => console.log(error
   //and then the second function, sortWords(), 
   //will sort the words in alphabetical order. 
   //If the array contains anything but strings, it should throw an error.
+    
+
+  //my work:
+
+  const letters = ["a", "b", "c", "d"]
+        
+  const makeAllCaps = (arr) => {
+    new Promise ((resolve, reject) => {
+      const capitalized = arr.map(a => {
+          for(let i = 0; i < arr.length; i++){
+            if(typeof arr[i] !== 'string'){
+                reject('Not a string')
+              } else{
+                return arr.toUpperCase()
+              }
+
+          }
+        
+        
+      })
+  
+  resolve(capitalized)
+
+})
+  
+  }
+  makeAllCaps(letters)
+  .then(result => console.log(result))
+  .catch(error => console.log(error))
+
+
+
+
+
+
+
+
+
+
+
 
 
 const arrayOfWords = ['cucumber', 'tomatos', 'avocado']
