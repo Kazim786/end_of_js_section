@@ -180,3 +180,87 @@ Promise.all(urls.map(url => { //map works with each element of the array and man
   
 //   // #6) Change one of your urls above to make it incorrect and fail the promise
 //   // does your catch block handle it?
+
+
+//**********************
+
+//repl.it js promises exercise:
+
+//Exercise 1:
+//Write a function testNum that takes a 
+//number as an argument and returns a 
+//Promise that tests if the value is less than or greater than the value 10.
+
+const testNum = (num) => {
+  return new Promise ((resolve, reject) => {
+      if(num < 10 || num > 10){
+          resolve('Number fits criteria')
+      } else{
+          reject('Number does not fit')
+      }
+  })
+} 
+testNum(10).then(result => 
+    console.log('success')
+).catch(error => console.log(error))
+
+testNum(10).then(result => console.log(result)).catch(error => console.log(error)) //Output "Number doesnt fit"
+testNum(1).then(result => console.log(result)).catch(error => console.log(error)) //Output "Number fits criteria"
+testNum(14).then(result => console.log(result)).catch(error => console.log(error)) //Output "Number fits criteria"
+  
+  //Exercise 2:
+  //Write two functions that use Promises that you can chain! 
+  //The first function, makeAllCaps(), 
+  //will take in an array of words and capitalize them, 
+  //and then the second function, sortWords(), 
+  //will sort the words in alphabetical order. 
+  //If the array contains anything but strings, it should throw an error.
+
+
+const arrayOfWords = ['cucumber', 'tomatos', 'avocado']
+const complicatedArray = ['cucumber', 44, true]
+
+const makeAllCaps = (array) => {
+   return new Promise((resolve, reject) => {
+     
+    let capsArray = array.map(word => {
+     
+      if(typeof word === 'string'){
+        return word.toUpperCase()
+      } else {
+        reject('Error: Not all items in the array are strings!')
+      }
+    })
+    resolve(capsArray)
+  })
+}
+
+  
+ const sortWords = (array) => {
+   return new Promise((resolve, reject) => {
+     if(array) {
+       array.forEach((el) => {
+         if(typeof el !== 'string'){
+           reject('Error: Not all items in the array are strings!')
+         }
+       })
+       resolve(array.sort());
+     } else {
+       reject('Error: Something went wrong with sorting words.') 
+     }
+ })
+} 
+  
+
+makeAllCaps(arrayOfWords)
+  .then(sortWords)
+  .then((result) => console.log(result))
+  .catch(error => console.log(error))
+  
+makeAllCaps(complicatedArray)
+  .then(sortWords)
+  .then((result) => console.log(result))
+  .catch(error => console.log(error))
+  
+  
+  
