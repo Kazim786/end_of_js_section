@@ -47,6 +47,11 @@
 // Solve the questions below:
 
 // #1) Create a promise that resolves in 4 seconds and returns "success" string
+const aPromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve('success')
+    }, 4000)
+}).then(console.log)
 
 // #2) Run the above promise and make it console.log "success"
 
@@ -69,6 +74,50 @@ const urls = [
 
 // #6) Change one of your urls above to make it incorrect and fail the promise
 // does your catch block handle it?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // ********************
