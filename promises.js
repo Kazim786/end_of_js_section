@@ -51,10 +51,10 @@ const aPromise = new Promise((resolve, reject) => {
     setTimeout(() => {
         resolve('success')
     }, 4000)
-}).then(console.log)
+})
 
 // #2) Run the above promise and make it console.log "success"
-
+aPromise.then(console.log)
 
 // #3) Read about Promise.resolve() and Promise.reject(). How can you make
 // the above promise shorter with Promise.resolve() and console loggin "success"
