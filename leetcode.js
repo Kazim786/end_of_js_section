@@ -18,10 +18,7 @@
 // Explanation: 342 + 465 = 807.
 
 
-
-
-
-
+//DONE :D
 var addTwoNumbers = function(l1, l2) {
     //turn arrays into strings first and then join them then turn to numbers
       l1 = l1.reverse()
@@ -37,10 +34,7 @@ var addTwoNumbers = function(l1, l2) {
       sum = sum.split("")
       sumArr.push(sum)
       
-      
-  // for(let i = 0; i < l1.length; i++){
-  //     sum.push(Number(l1.substring(i) + Number(l2.substring(i)) 
-  // }
+    
         console.log(sum)
         return sumArr
   };
