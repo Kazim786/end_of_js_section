@@ -589,3 +589,12 @@
 
 // isSpecialArray([2, 7, 8, 8, 6, 1, 6, 3]) ➞ false
 // // Index 3 has an even number 8.
+function isSpecialArray(arr) {
+	for(let i = 0; i < arr.length; i++){
+        if(arr.indexOf(arr[i]) % 2 === 0 && arr[i] % 2 === 0){
+          console.log(arr[i])
+        } else if(arr.indexOf(arr[i]) % 2 === 0 && arr[i] % 2 !== 0){
+          console.log('nope')
+        }
+    }
+}
