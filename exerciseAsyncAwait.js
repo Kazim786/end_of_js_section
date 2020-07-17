@@ -7,7 +7,15 @@ fetch("https://jsonplaceholder.typicode.com/users/")
 
   //My Code:
 async function question1(){
-  await axios.get("https://jsonplaceholder.typicode.com/users/")
+  try{
+    const resp = await axios.get("https://jsonplaceholder.typicode.com/users/") //Using axios. Works differently than fetch. So no .json() and .then
+    console.log(resp)
+
+  }
+  catch(err){
+    console.log(err)
+  }
+ 
 }
   
 
