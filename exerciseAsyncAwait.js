@@ -17,7 +17,30 @@ async function question1(){
   }
  
 }
-  
+
+//****************************** */
+
+//MY OWN PRACTICE CODE. SEPARATE FROM THE EXERCISES GIVEN BY ANDREI:
+
+// function getNames (results){
+//   for(let user of results){
+//     console.log(user.name)
+//   }}
+
+// async function question1(){
+//   try{
+//     const resp = await axios.get("https://jsonplaceholder.typicode.com/users/") //Using axios. Works differently than fetch. So no .json() and .then
+//     const results = resp.data;
+//     // console.log(results[0].name)
+//     getNames(results)
+
+//   }
+//   catch(err){
+//     console.log(err)
+//   } 
+// }
+
+//************************ */  
 
 // #2) ADVANCED: Update the function below from the video to also have
 // async await for this line: fetch(url).then(resp => resp.json())
