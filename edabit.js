@@ -592,9 +592,9 @@
 function isSpecialArray(arr) {
 	for(let i = 0; i < arr.length; i++){
         if(arr.indexOf(arr[i]) % 2 === 0 && arr[i] % 2 === 0){
-          console.log(arr[i])
+          return true 
         } else if(arr.indexOf(arr[i]) % 2 === 0 && arr[i] % 2 !== 0){
-          console.log('nope')
+          return false
         }
     }
 }
