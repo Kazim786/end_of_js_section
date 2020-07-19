@@ -591,6 +591,7 @@
 // // Index 3 has an even number 8.
 function isSpecialArray(arr) {
 	for(let i = 0; i < arr.length; i++){
+        //indexOf gets first occurence of an element so its not the best choiice
         if(arr.indexOf(arr[i]) % 2 === 0 && arr[i] % 2 === 0 && arr.indexOf(arr[i]) % 2 !== 0 && arr[i] % 2 !== 0){
           console.log("true, even") //this would work only for even numbers tho. This should now include for both odd and even.
         } else if(arr.indexOf(arr[i]) % 2 !== 0 && arr[i] % 2 !== 0){
