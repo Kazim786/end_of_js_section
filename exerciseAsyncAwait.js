@@ -87,3 +87,22 @@ const urls = [
   "https://jsonplaceholdeTYPO.typicode.com/posts",
   "https://jsonplaceholder.typicode.com/albums",
 ];
+
+//************ */
+
+//Tried my own exercise with async await
+
+
+async function films (){
+  const films = await axios.get('https://swapi.dev/api/people/1/')
+  try{
+      
+      for(let i of films.data.films){
+        console.log(i)
+      }
+  }
+  catch{
+    console.log('error')
+  }
+}
+console.log(films())
