@@ -623,6 +623,6 @@
 // If you're really stuck, unlock solutions in the Solutions tab.
 
 const toSeconds = (min) => {
-  let seconds = min * 30
+  let seconds = min * 60
   return seconds
 }
