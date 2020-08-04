@@ -589,18 +589,40 @@
 
 // isSpecialArray([2, 7, 8, 8, 6, 1, 6, 3]) ➞ false
 // // Index 3 has an even number 8.
-function isSpecialArray(arr) {
-	for(let i = 0; i < arr.length; i++){
-        //indexOf gets first occurence of an element so its not the best choiice
-        if(arr.indexOf(arr[i]) % 2 === 0 && arr[i] % 2 === 0 && arr.indexOf(arr[i]) % 2 !== 0 && arr[i] % 2 !== 0){
-          console.log("true, even") //this would work only for even numbers tho. This should now include for both odd and even.
-        } else if(arr.indexOf(arr[i]) % 2 !== 0 && arr[i] % 2 !== 0){
-          console.log('true, odd' )
-        }
-    }
+// function isSpecialArray(arr) {
+// 	for(let i = 0; i < arr.length; i++){
+//         //indexOf gets first occurence of an element so its not the best choiice
+//         if(arr.indexOf(arr[i]) % 2 === 0 && arr[i] % 2 === 0 && arr.indexOf(arr[i]) % 2 !== 0 && arr[i] % 2 !== 0){
+//           console.log("true, even") //this would work only for even numbers tho. This should now include for both odd and even.
+//         } else if(arr.indexOf(arr[i]) % 2 !== 0 && arr[i] % 2 !== 0){
+//           console.log('true, odd' )
+//         }
+//     }
+// }
+
+// const ex = [2, 2, 2, 4]
+// console.log(ex.indexOf(ex[4])) //This is not working
+
+// console.log(isSpecialArray(ex))
+
+//Exercise 15
+
+//Convert Minutes into Seconds
+
+// Write a function that takes an integer minutes and converts it to seconds.
+
+// Examples
+// convert(5) ➞ 300
+
+// convert(3) ➞ 180
+
+// convert(2) ➞ 120
+// Notes
+// Don't forget to return the result.
+// If you get stuck on a challenge, find help in the Resources tab.
+// If you're really stuck, unlock solutions in the Solutions tab.
+
+const toSeconds = (min) => {
+  let seconds = min * 30
+  return seconds
 }
-
-const ex = [2, 2, 2, 4]
-console.log(ex.indexOf(ex[4])) //This is not working
-
-console.log(isSpecialArray(ex))
